@@ -1,12 +1,11 @@
 .cta {
 	margin-bottom: 80px;
 	@include mobile {
-		
 		padding: 40px 20px;
 	}
 }
 .cta__container {
-    background: #f0f5f9;
+	background: #f0f5f9;
 	border-radius: 10px;
 }
 .cta__content {
