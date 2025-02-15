@@ -420,9 +420,15 @@ body {
 .cta {
   margin-bottom: 80px;
 }
+@media (max-width: 788px) {
+  .cta {
+    padding: 40px 20px;
+  }
+}
 
 .cta__container {
   background: #f0f5f9;
+  border-radius: 10px;
 }
 
 .cta__content {
@@ -431,11 +437,17 @@ body {
   row-gap: 25px;
   justify-content: center;
   align-items: center;
-  padding-block: 60px;
+  padding: 60px;
+}
+@media (max-width: 1250px) {
+  .cta__content {
+    padding: 60px 30px;
+  }
 }
 @media (max-width: 788px) {
   .cta__content {
     row-gap: 20px;
+    padding: 40px 20px;
   }
 }
 
@@ -444,6 +456,7 @@ body {
   font-size: 32px;
   line-height: 1;
   color: #000;
+  text-align: center;
 }
 @media (max-width: 1250px) {
   .cta__title {
@@ -453,6 +466,7 @@ body {
 @media (max-width: 788px) {
   .cta__title {
     font-size: 22px;
+    line-height: 1.3;
     text-align: center;
   }
 }
@@ -462,25 +476,6 @@ body {
   font-size: 14px;
   line-height: 1;
   color: #000;
-}
-
-a.cta-button {
-  background: #039be5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 20px;
-  border-radius: 80px;
-}
-
-.cta-button {
-  font-weight: 700;
-  font-size: 16px;
-  color: #fff;
-}
-
-.cta__img {
-  margin-right: 10px;
 }
 
 .footer {
@@ -662,17 +657,20 @@ a.btn {
   display: inline-block;
   padding: 10px 20px;
   border-radius: 80px;
-  background-color: #000000;
+  background-color: #039be5;
   font-size: 16px;
   font-weight: 700;
   color: #fff;
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
   text-align: center;
   text-decoration: none;
   transition: background-color 0.2s ease-in;
 }
 .btn:hover,
 a.btn:hover {
-  background-color: #333;
+  background-color: #1684ba;
 }
 .btn--wide,
 a.btn--wide {
