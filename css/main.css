@@ -382,6 +382,8 @@ body {
   margin-top: -7px;
   width: 216px;
   height: 138px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card__title {
